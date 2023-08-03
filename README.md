@@ -8,7 +8,7 @@ Windows XP SP3: termsrv.dll_SP3.zip
 
 # 1 - Parar servicio "Terminal Services":
 
-sc queryex TermService
+sc queryex TermService\n
 taskkill /F /PID PID_SERVICIO_ANTERIOR
 
 # NOTA: Tras parar los servicios, tendrás 1 minuto para realizar las siguientes acciones.
