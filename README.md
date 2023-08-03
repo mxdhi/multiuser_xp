@@ -2,22 +2,22 @@
 
 Zip a usar por version de Windows:
 
-Windows XP RTM SP1 y SP2: termsrv.dll_RTM.zip
-Windows XP SP2: termsrv.dll_SP2.zip
-Windows XP SP3: termsrv.dll_SP3.zip
+Windows XP RTM SP1 y SP2: termsrv.dll_RTM.zip<br />
+Windows XP SP2: termsrv.dll_SP2.zip<br />
+Windows XP SP3: termsrv.dll_SP3.zip<br />
 
 # 1 - Parar servicio "Terminal Services":
 
-sc queryex TermService\n
+sc queryex TermService<br />
 taskkill /F /PID PID_SERVICIO_ANTERIOR
 
 # NOTA: Tras parar los servicios, tendrás 1 minuto para realizar las siguientes acciones.
 
 # 2 - Backup del fichero termsrv.dll y copia del nuevo archivo dll:
 
-Entrar en %windir%\System32 y renombrar, si existe, el archivo termsrv.dll a termsrv_back.dll. Luego copiar el termsrv.dll descargado.
+Entrar en %windir%\System32 y renombrar, si existe, el archivo termsrv.dll a termsrv_back.dll. Luego copiar el termsrv.dll descargado.<br />
 
-Entrar en %windir%\System32\dllcache y renombrar, si existe, el archivo termsrv.dll a termsrv_back.dll. Luego copiar el termsrv.dll descargado.
+Entrar en %windir%\System32\dllcache y renombrar, si existe, el archivo termsrv.dll a termsrv_back.dll. Luego copiar el termsrv.dll descargado.<br />
 
 # 3 - Ejecutar el bat CCreg.bat con permisos de administrador.
 
